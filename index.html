@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ガチャコレクション</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/gacha.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
+  <body>
+    <!-- ガチャ画面メイン領域 -->
+    <main class="gacha-container">
+      <!-- <h1>プレミアムガチャ</h1> -->
+
+      <div class="stats-panel">
+        <p class="pixel-counter">
+          累計ガチャ回数:
+          <span class="number" id="total-rolls">0</span>
+          回
+        </p>
+        <p class="pixel-counter">
+          コレクション: <span id="collection-count">0</span> / 30
+        </p>
+      </div>
+
+      <!-- 抽選結果表示エリア -->
+      <div class="result-display" id="result-display">
+        <div class="placeholder-card">？</div>
+      </div>
+
+      <!-- UI操作エリア -->
+      <div class="control-panel">
+        <button id="btn-roll" class="btn-primary">ガチャを引く</button>
+        <button id="btn-open-gallery" class="btn-secondary">
+          ギャラリーを見る
+        </button>
+        <button id="btn-reset" class="btn-danger">データリセット</button>
+      </div>
+    </main>
+
+    <!-- ギャラリーモーダル -->
+    <div id="gallery-modal" class="modal-overlay hidden">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h2>コレクションギャラリー</h2>
+          <button id="btn-close-gallery" class="btn-close">&times;</button>
+        </header>
+        <!-- カード一覧が動的に展開されるコンテナ -->
+        <div id="gallery-grid" class="gallery-grid"></div>
+      </div>
+    </div>
+
+    <!-- エントリーポイント -->
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

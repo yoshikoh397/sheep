@@ -1,0 +1,138 @@
+.gacha-container {
+  text-align: center;
+  background: var(--color-surface);
+  padding: 20px;
+  /* border-radius: 15px; */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 420px;
+  /* height: auto; */
+  background-image: url(/images/Untitled.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+.stats-panel {
+  display: flex;
+  justify-content: space-around;
+  /* font-family: "DotGothic16", sans-serif; */
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+  color: #ffffff;
+}
+.pixel-counter {
+  /* ドット絵風のフォントを指定（Google FontsのDotGothic16を使用） */
+  font-family: "DotGothic16", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+
+  /* 内側の余白とサイズ */
+  padding: 8px 12px;
+  min-width: 120px;
+  /* height: 36px; */
+
+  /* display: inline-flex;
+  justify-content: space-between;
+  align-items: center; */
+  background-color: #90161a; /* 半透明の黒背景 */
+
+  /* 角を少し丸める（ドット感を出すため小さめの値に） */
+  border-radius: 9px;
+
+  /* 【重要】ドット絵特有の「二重の枠線」と「立体感」をbox-shadowだけで表現 */
+  box-shadow:
+    0 0 0 2px #f3a776,
+    /* 内側の濃い赤茶の枠 */ 0 0 0 6px #b8333e,
+    /* 外側の明るい赤の枠 */ 0 4px 0 4px rgba(0, 0, 0, 0.3); /* 一番下の立体感を出す影 */
+}
+
+.result-display {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border: 2px dashed #444;
+  /* border-radius: 10px; */
+  /* background: rgba(0, 0, 0, 0.2); */
+}
+.placeholder-card {
+  font-size: 3rem;
+  color: #555;
+}
+.control-panel {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+/* 共通カードデザイン */
+.card-item {
+  width: 80%;
+  padding: 15px;
+  border-radius: 10px;
+  background: #333;
+  text-align: center;
+  position: relative;
+  border: 2px solid #555;
+}
+.card-rarity-badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+  background: #111;
+}
+.card-mock-img {
+  img {
+    max-width: 250px;
+  }
+
+  margin: 15px 0;
+}
+.card-name {
+  font-size: 0.85rem;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* レアリティ設定（枠線の色変化） */
+.rarity-n {
+  border-color: #888;
+}
+.rarity-r {
+  border-color: #3498db;
+  color: #3498db;
+}
+.rarity-sr {
+  border-color: #f1c40f;
+  color: #f1c40f;
+}
+.rarity-ssr {
+  border-color: #9b59b6;
+  color: #e0a8ff;
+  box-shadow: 0 0 10px #9b59b6;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animate-pop {
+  animation: pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+.loading-spinner {
+  color: #aaa;
+  font-style: italic;
+}

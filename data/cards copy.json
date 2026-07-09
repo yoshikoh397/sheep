@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "ノーマルカード 01",
+    "rarity": "N",
+    "image": "images/cards/card01.png"
+  },
+  {
+    "id": 2,
+    "name": "ノーマルカード 02",
+    "rarity": "N",
+    "image": "images/cards/card02.png"
+  },
+  {
+    "id": 3,
+    "name": "ノーマルカード 03",
+    "rarity": "N",
+    "image": "images/cards/card03.png"
+  },
+  {
+    "id": 4,
+    "name": "ノーマルカード 04",
+    "rarity": "N",
+    "image": "images/cards/card04.png"
+  },
+  {
+    "id": 5,
+    "name": "ノーマルカード 05",
+    "rarity": "N",
+    "image": "images/cards/card05.png"
+  },
+  {
+    "id": 6,
+    "name": "ノーマルカード 06",
+    "rarity": "N",
+    "image": "images/cards/card06.png"
+  },
+  {
+    "id": 7,
+    "name": "ノーマルカード 07",
+    "rarity": "N",
+    "image": "images/cards/card07.png"
+  },
+  {
+    "id": 8,
+    "name": "ノーマルカード 08",
+    "rarity": "N",
+    "image": "images/cards/card08.png"
+  },
+  {
+    "id": 9,
+    "name": "ノーマルカード 09",
+    "rarity": "N",
+    "image": "images/cards/card09.png"
+  },
+  {
+    "id": 10,
+    "name": "ノーマルカード 10",
+    "rarity": "N",
+    "image": "images/cards/card10.png"
+  },
+  {
+    "id": 11,
+    "name": "ブロンズカード 11",
+    "rarity": "R",
+    "image": "images/cards/card11.png"
+  },
+  {
+    "id": 12,
+    "name": "ブロンズカード 12",
+    "rarity": "R",
+    "image": "images/cards/card12.png"
+  },
+  {
+    "id": 13,
+    "name": "ブロンズカード 13",
+    "rarity": "R",
+    "image": "images/cards/card13.png"
+  },
+  {
+    "id": 14,
+    "name": "ブロンズカード 14",
+    "rarity": "R",
+    "image": "images/cards/card14.png"
+  },
+  {
+    "id": 15,
+    "name": "ブロンズカード 15",
+    "rarity": "R",
+    "image": "images/cards/card15.png"
+  },
+  {
+    "id": 16,
+    "name": "ブロンズカード 16",
+    "rarity": "R",
+    "image": "images/cards/card16.png"
+  },
+  {
+    "id": 17,
+    "name": "ブロンズカード 17",
+    "rarity": "R",
+    "image": "images/cards/card17.png"
+  },
+  {
+    "id": 18,
+    "name": "ブロンズカード 18",
+    "rarity": "R",
+    "image": "images/cards/card18.png"
+  },
+  {
+    "id": 19,
+    "name": "ブロンズカード 19",
+    "rarity": "R",
+    "image": "images/cards/card19.png"
+  },
+  {
+    "id": 20,
+    "name": "ブロンズカード 20",
+    "rarity": "R",
+    "image": "images/cards/card20.png"
+  },
+  {
+    "id": 21,
+    "name": "ゴールドカード 21",
+    "rarity": "SR",
+    "image": "images/cards/card21.png"
+  },
+  {
+    "id": 22,
+    "name": "ゴールドカード 22",
+    "rarity": "SR",
+    "image": "images/cards/card22.png"
+  },
+  {
+    "id": 23,
+    "name": "ゴールドカード 23",
+    "rarity": "SR",
+    "image": "images/cards/card23.png"
+  },
+  {
+    "id": 24,
+    "name": "ゴールドカード 24",
+    "rarity": "SR",
+    "image": "images/cards/card24.png"
+  },
+  {
+    "id": 25,
+    "name": "ゴールドカード 25",
+    "rarity": "SR",
+    "image": "images/cards/card25.png"
+  },
+  {
+    "id": 26,
+    "name": "ゴールドカード 26",
+    "rarity": "SR",
+    "image": "images/cards/card26.png"
+  },
+  {
+    "id": 27,
+    "name": "ゴールドカード 27",
+    "rarity": "SR",
+    "image": "images/cards/card27.png"
+  },
+  {
+    "id": 28,
+    "name": "ゴールドカード 28",
+    "rarity": "SR",
+    "image": "images/cards/card28.png"
+  },
+  {
+    "id": 29,
+    "name": "ゴールドカード 29",
+    "rarity": "SR",
+    "image": "images/cards/card29.png"
+  },
+  {
+    "id": 30,
+    "name": "レジェンドカード 30",
+    "rarity": "SSR",
+    "image": "images/cards/card30.png"
+  }
+]
