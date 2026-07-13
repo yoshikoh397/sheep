@@ -11,16 +11,16 @@ import * as galleryView from "./views/galleryView.js";
 let isProcessing = false;
 
 /**
- * アプリの初期化
+ * アプリ初期化
  */
 async function initApp() {
-  // 1. マスターデータの読み込み
+  // 1. マスターデータ読み込み
   await initDataLoader();
 
-  // 2. ギャラリーDOMをあらかじめバックグラウンドで1回だけ生成
+  // 2. ギャラリーDOMの初回取得
   galleryView.initGalleryGrid(getCards());
 
-  // 3. UIの初期表示を更新
+  // 3. UIの初期表示
   refreshUserStats();
 
   // 4. イベントリスナーのバインド

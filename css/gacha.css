@@ -2,23 +2,24 @@
   text-align: center;
   background: var(--color-surface);
   padding: 20px;
+  border: 8px solid #ffffff;
   /* border-radius: 15px; */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 4px rgba(255, 196, 32, 0.3);
   width: 100%;
-  max-width: 420px;
+  max-width: 500px;
   /* height: auto; */
-  background-image: url(/images/Untitled.jpg);
+  background-image: url(../images/bg.png);
   background-position: center;
   background-repeat: none;
   background-size: cover;
 }
 .stats-panel {
   display: flex;
-  justify-content: space-around;
-  /* font-family: "DotGothic16", sans-serif; */
+  justify-content: center;
   margin-bottom: 20px;
   font-size: 0.7rem;
   color: #ffffff;
+  gap: 40px;
 }
 .pixel-counter {
   /* ドット絵風のフォントを指定（Google FontsのDotGothic16を使用） */
@@ -34,16 +35,9 @@
   /* display: inline-flex;
   justify-content: space-between;
   align-items: center; */
-  background-color: #90161a; /* 半透明の黒背景 */
-
-  /* 角を少し丸める（ドット感を出すため小さめの値に） */
+  background-color: #90161a;
   border-radius: 9px;
-
-  /* 【重要】ドット絵特有の「二重の枠線」と「立体感」をbox-shadowだけで表現 */
-  box-shadow:
-    0 0 0 2px #f3a776,
-    /* 内側の濃い赤茶の枠 */ 0 0 0 6px #b8333e,
-    /* 外側の明るい赤の枠 */ 0 4px 0 4px rgba(0, 0, 0, 0.3); /* 一番下の立体感を出す影 */
+  box-shadow: 0 0 0 2px #f3a776;
 }
 
 .result-display {
@@ -51,8 +45,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
-  border: 2px dashed #444;
+  margin-bottom: 120px;
+  /* border: 2px dashed #444; */
   /* border-radius: 10px; */
   /* background: rgba(0, 0, 0, 0.2); */
 }
@@ -62,29 +56,44 @@
 }
 .control-panel {
   display: flex;
+  justify-content: center;
   /* flex-direction: column; */
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 /* 共通カードデザイン */
 .card-item {
-  width: 80%;
-  padding: 15px;
+  width: 72%;
+  padding: 15px 0px;
   border-radius: 10px;
-  background: #333;
+  background: rgba(255, 255, 255, 0);
+  background-color: hsla(0, 0%, 90%, 0.95);
+  /* background-image:
+    radial-gradient(at 77% 76%, hsla(61, 100%, 87%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 49% 37%, hsla(22, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 87% 19%, hsla(183, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 0% 56%, hsla(349, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(16, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 1% 0%, hsla(337, 100%, 75%, 0.7) 0px, transparent 50%); */
   text-align: center;
   position: relative;
-  border: 2px solid #555;
+  border: 5px solid #555;
+  font-weight: 500;
+  color: #1d1d1d;
 }
 .card-rarity-badge {
   position: absolute;
   top: 5px;
   left: 5px;
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
+  font-size: 1rem;
   padding: 2px 6px;
   border-radius: 3px;
   font-weight: bold;
   background: #111;
+  color: #ffffff;
+
+  /* background: #111; */
 }
 .card-mock-img {
   img {
@@ -94,11 +103,15 @@
   margin: 15px 0;
 }
 .card-name {
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.card-explanation {
+  font-size: 0.85rem;
 }
 
 /* レアリティ設定（枠線の色変化） */
@@ -108,15 +121,48 @@
 .rarity-r {
   border-color: #3498db;
   color: #3498db;
+  color: #1d1d1d;
+  background-color: hsla(197, 100%, 96%, 0.95);
+  .card-rarity-badge {
+    color: #3498db;
+  }
 }
 .rarity-sr {
   border-color: #f1c40f;
   color: #f1c40f;
+  color: #1d1d1d;
+
+  background-color: hsla(0, 0%, 100%, 0.9);
+  background-image:
+    radial-gradient(at 77% 76%, hsla(61, 100%, 87%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 49% 37%, hsla(22, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 87% 19%, hsla(183, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 0% 56%, hsla(349, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(16, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 1% 0%, hsla(337, 100%, 75%, 0.7) 0px, transparent 50%);
+
+  .card-rarity-badge {
+    color: #f1c40f;
+  }
 }
 .rarity-ssr {
   border-color: #9b59b6;
   color: #e0a8ff;
+  color: #1d1d1d;
+
+  background-color: hsla(0, 0%, 100%, 0.9);
+  background-image:
+    radial-gradient(at 77% 76%, hsla(61, 100%, 87%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 49% 37%, hsla(22, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 87% 19%, hsla(183, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 0% 56%, hsla(349, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(16, 100%, 75%, 0.7) 0px, transparent 50%),
+    radial-gradient(at 1% 0%, hsla(337, 100%, 75%, 0.7) 0px, transparent 50%);
+
   box-shadow: 0 0 10px #9b59b6;
+  .card-rarity-badge {
+    color: #e0a8ff;
+  }
 }
 
 @keyframes pop {

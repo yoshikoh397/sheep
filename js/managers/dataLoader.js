@@ -6,7 +6,7 @@ let cardCache = null;
 export async function initDataLoader() {
   if (cardCache) return;
   try {
-    const response = await fetch("./data/cards.json");
+    const response = await fetch("../../data/cards.json");
     if (!response.ok) throw new Error("カードデータの読み込みに失敗しました");
     cardCache = await response.json();
   } catch (error) {

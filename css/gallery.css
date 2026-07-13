@@ -4,18 +4,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(124, 124, 124, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 .modal-content {
-  background: var(--color-surface);
+  background: rgba(0, 0, 0, 0.6);
   width: 85%;
-  max-width: 600px;
-  height: 80vh;
-  border-radius: 15px;
+  max-width: 470px;
+  height: 70vh;
+  border-radius: 7px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.8);
   padding-bottom: 10px;
 }
 .btn-close {
@@ -34,18 +34,31 @@
   padding: 0;
 }
 .gallery-grid {
-  flex: 1;
+  /* flex: 1; */
   overflow-y: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 15px;
   padding-top: 15px;
+  padding-right: 15px;
+
+  .card-name {
+    font-size: 0.85rem;
+  }
+
+  .card-mock-img {
+    img {
+      max-width: 100px;
+      max-height: 75px;
+    }
+  }
 }
 
 /* 未所持状態のグレーアウト設定 */
 .gallery-card-wrapper.not-collected .card-item {
   filter: grayscale(100%) brightness(40%);
   border-color: #333;
+  color: var(--color-text);
 }
 .gallery-card-wrapper .card-item {
   width: auto;

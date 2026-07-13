@@ -13,9 +13,8 @@ export function initGalleryGrid(allCards) {
     <div class="gallery-card-wrapper not-collected" id="gallery-card-${card.id}">
       <div class="card-item rarity-${card.rarity.toLowerCase()}">
         <div class="card-rarity-badge">${card.rarity}</div>
-        <div class="card-mock-img"><img src="${card.name}" alt=""></div>
+        <div class="card-mock-img"><img src="${card.image}" alt=""></div>
         <p class="card-name">${card.name}</p>
-         <p class="card-name">${card.name}</p>
       </div>
     </div>
   `,

@@ -1,9 +1,37 @@
 [
   {
     "id": 1,
-    "name": "ただのヒツジ",
+    "name": "今年の主役",
     "rarity": "N",
     "image": "/images/card/card01.png",
-    "explanation": "普通のヒツジ、今日もモフモフ"
+    "explanation": "今年もモフモフ"
+  },
+  {
+    "id": 2,
+    "name": "今年の運試し",
+    "rarity": "R",
+    "image": "/images/card/card02.png",
+    "explanation": "何がでるかな"
+  },
+  {
+    "id": 3,
+    "name": "新しい挑戦",
+    "rarity": "SR",
+    "image": "/images/card/card03.png",
+    "explanation": "新年だからね"
+  },
+  {
+    "id": 4,
+    "name": "俺はやるぜ",
+    "rarity": "SSR",
+    "image": "/images/card/card04.jpg",
+    "explanation": "正直3年ぐらい干支をやっても良いと思っています"
+  },
+  {
+    "id": 5,
+    "name": "ねこはねこ",
+    "rarity": "N",
+    "image": "/images/card/card05.jpg",
+    "explanation": "干支には入れなかったけど気にしない"
   }
 ]

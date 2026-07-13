@@ -10,7 +10,7 @@ export function drawGacha(allCards, collectedIds, currentRollCount) {
 
   const nextRollCount = currentRollCount + 1;
 
-  // 10回に1回は「確定で未所持カード」が出る救済システム
+  // 10回に1回は「確定で未所持カード」が出る
   const isGuaranteedNew = nextRollCount % 10 === 0;
 
   if (isGuaranteedNew) {
