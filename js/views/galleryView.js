@@ -1,7 +1,7 @@
 let isGridInitialized = false;
 
 /**
- * ギャラリーの骨組み（30枚分）を一度だけ生成します
+ * ギャラリーの骨組み生成
  */
 export function initGalleryGrid(allCards) {
   if (isGridInitialized) return;
@@ -25,7 +25,7 @@ export function initGalleryGrid(allCards) {
 }
 
 /**
- * 現在の所持状況に合わせて、グレーアウトを解除します
+ * 現在の所持状況に合わせて、グレーアウト解除
  */
 export function updateGalleryState(collectedIds) {
   collectedIds.forEach((id) => {

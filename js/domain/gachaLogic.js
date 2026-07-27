@@ -11,18 +11,18 @@ export function drawGacha(allCards, collectedIds, currentRollCount) {
   const nextRollCount = currentRollCount + 1;
 
   // 10回に1回は「確定で未所持カード」が出る
-  const isGuaranteedNew = nextRollCount % 10 === 0;
+  // const isGuaranteedNew = nextRollCount % 10 === 0;
 
-  if (isGuaranteedNew) {
-    const uncollectedCards = allCards.filter(
-      (card) => !collectedIds.includes(card.id),
-    );
+  // if (isGuaranteedNew) {
+  //   const uncollectedCards = allCards.filter(
+  //     (card) => !collectedIds.includes(card.id),
+  //   );
 
-    // 未取得カードが残っていれば、その中から抽選
-    if (uncollectedCards.length > 0) {
-      return getRandomElement(uncollectedCards);
-    }
-  }
+  // 未取得カードが残っていれば、その中から抽選
+  //   if (uncollectedCards.length > 0) {
+  //     return getRandomElement(uncollectedCards);
+  //   }
+  // }
 
   // 通常時は全カードから完全ランダム抽選
   return getRandomElement(allCards);

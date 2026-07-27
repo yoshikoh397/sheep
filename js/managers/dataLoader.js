@@ -1,7 +1,7 @@
 let cardCache = null;
 
 /**
- * cards.jsonからデータを一度だけ読み込みキャッシュします
+ * cards.jsonからデータを一度だけ読み込みキャッシュ
  */
 export async function initDataLoader() {
   if (cardCache) return;

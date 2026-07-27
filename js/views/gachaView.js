@@ -30,6 +30,6 @@ export function displayResult(card) {
 
 export function resetDisplay() {
   document.getElementById("result-display").innerHTML = `
-    <div class="placeholder-card">？</div>
+    <div class="placeholder-card"></div>
   `;
 }
